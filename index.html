@@ -5,40 +5,100 @@
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <!-- Nav Navbar -->
     <div class="navmenu">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <!-- Menu -->
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-light" id="main_navbar" style="background-color: #273c75;">
+            <a class="navbar-brand" href="#">Anasayfa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse animate fadeIn bgfixer" id="navbarCollapse">
+                <ul class="navbar-nav hide-animation" data-animations="fadeInUp fadeInLeft fadeInUp fadeInRight">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Anasayfa</a>
+                    </li>
+                    <!-- Hakkımızda -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Hakkımızda
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Firma Tanıtımı</a></li>
+                            <li><a class="dropdown-item" href="#">Misyon</a></li>
+                            <li><a class="dropdown-item" href="#">Vizyon</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!-- Faaliyet alanları --><!-- -->
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Faaliyet alanları</a>
+
+                        <ul class="dropdown-menu " aria-labelledby="dropdown1">
+                            <li class="dropdown-item dropdown ">
+                                <a class="dropdown-toggle zone" id="dropdown2-1-1" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">Makine</a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdown2-1-1" ">
+                                        <li class=" dropdown-item"><a href="#">İNŞAAT MAKİNELERİ</a>
+                            </li>
+                            <li class="dropdown-item"><a href="#">KULE VİNÇ</a></li>
+                            <li class="dropdown-item"><a href="#">AMBALAJ MAKİNELERİ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-item dropdown ">
+                        <a class="dropdown-toggle zone" id="dropdown2-1-2" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Asansör</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown2-1-2">
+                            <li class="dropdown-item"><a href="#">YÜK TAŞIMA ASANSÖRLERİ</a></li>
+                            <li class="dropdown-item"><a href="#">İNSAN TAŞIMA ASANSÖRLERİ</a></li>
+                            <li class="dropdown-item"><a href="#">YÜRÜYEN MERDİVEN SİSTEMLERİ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-item dropdown ">
+                        <a class="dropdown-toggle zone" id="dropdown2-1-2" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">İnşaat</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown2-1-2">
+                            <li class="dropdown-item"><a href="#">ÜST YAPI</a></li>
+                            <li class="dropdown-item"><a href="#">ALT YAPI</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ürünler
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Asansör</a></li>
+                        <li><a class="dropdown-item" href="#">Makine</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Referanslar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">İletişim</a>
+                </li>
+                </ul>
+
+
+            </div>
+        </nav>
+      </div>
     </div>
 
     <!-- Slide -->
@@ -202,11 +262,14 @@
 
     </div>
 
+    <script type="text/javascript" src="js/countUp.js"></script>
+    <script src="js/countUp-jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
- integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
- integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
