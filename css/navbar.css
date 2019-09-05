@@ -1,0 +1,8 @@
+#my-navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%; /*example + never use min-width with this solution */
+    height: 100%;
+}
